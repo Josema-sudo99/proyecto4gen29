@@ -77,10 +77,57 @@
     background-color: aqua;
 }
 
-
-@media screen and (max-width: 768px) {
-    .usercard {
-        grid-template-columns: 1fr; 
-        padding: 10px; 
+@media screen and (max-width: 767px) {
+    .titulo {
+      /* Define los estilos específicos para dispositivos móviles aquí */
+      margin: 2rem; /* Ejemplo de cambio de margen */
+      text-align: center; /* Ejemplo de cambio de alineación de texto */
     }
-}
+  
+    .container-create {
+      /* Define los estilos específicos para dispositivos móviles aquí */
+      flex-direction: column; /* Ejemplo de cambio en la dirección de flexbox */
+    }
+  
+    .create-usuario {
+      /* Define los estilos específicos para dispositivos móviles aquí */
+      margin: 1rem; /* Ejemplo de cambio en el margen */
+    }
+  
+    .usercard {
+      /* Define los estilos específicos para dispositivos móviles aquí */
+      grid-template-columns: repeat(1, 1fr); /* Ejemplo de cambio en la estructura de la cuadrícula */
+      gap: 5px; /* Ejemplo de cambio en el espacio entre elementos */
+      padding: 30px; /* Ejemplo de cambio en el padding */
+    }
+  
+    /* Añade más estilos específicos para dispositivos móviles según sea necesario */
+  }
+  
+  /* Estilos para dispositivos de escritorio (PC) */
+  @media screen and (min-width: 768px) {
+    .titulo {
+      /* Define los estilos específicos para dispositivos de escritorio aquí */
+      margin: 3rem 3rem 0rem 3rem; /* Vuelve al margen original */
+      text-align: start; /* Vuelve a la alineación de texto original */
+    }
+  
+    .container-create {
+      /* Define los estilos específicos para dispositivos de escritorio aquí */
+      flex-direction: row; /* Vuelve a la dirección de flexbox original */
+    }
+  
+    .create-usuario {
+      /* Define los estilos específicos para dispositivos de escritorio aquí */
+      margin: 3rem; /* Vuelve al margen original */
+    }
+  
+    .usercard {
+      /* Define los estilos específicos para dispositivos de escritorio aquí */
+      grid-template-columns: repeat(3, 2fr); /* Vuelve a la estructura de la cuadrícula original */
+      gap: 10px; /* Vuelve al espacio entre elementos original */
+      padding: 70px; /* Vuelve al padding original */
+    }
+  
+    /* Añade más estilos específicos para dispositivos de escritorio según sea necesario */
+  }
