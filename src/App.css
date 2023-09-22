@@ -1,0 +1,86 @@
+.titulo{
+    margin: 3rem 3rem 0rem 3rem;
+    text-align: start;
+    font-family: sans-serif;
+    padding: 22px;
+}
+
+.container-create{
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-usuario{
+    margin: 3rem;
+    padding: 14px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #887ce7;
+    border: none;
+    color: white;
+}
+
+.usercard{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr); 
+    gap: 10px;
+    padding: 70px;
+}
+.text-recuadro{
+    margin: 1rem;
+    background-color: rgba(146, 143, 143, 0.336);
+    border: 2px solid #80808040;
+}
+
+.text-titulo{
+    margin: 0.5em 0.1rem 0rem 0.5rem;
+    font-family: cursive;
+    font-weight: 2;
+    text-align: start;
+}
+
+.text-usuario{
+    list-style: none;
+    text-align: start;
+    padding: 2rem 8rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-usuario-id{
+    margin: 0rem 1rem 1rem 1rem
+}
+
+.button-usuario{
+    margin: 0.5rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.hr-color{
+    color: black;
+}
+
+.botonsito{
+    font-size: 35px;
+    border: none;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.tacho{
+    background: #887ce7;
+}
+
+.lapiz {
+    background-color: aqua;
+}
+
+
+@media screen and (max-width: 768px) {
+    .usercard {
+        grid-template-columns: 1fr; 
+        padding: 10px; 
+    }
+}
